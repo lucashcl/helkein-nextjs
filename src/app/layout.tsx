@@ -1,3 +1,4 @@
+import Navbar from '@/layout/Navbar'
 import './globals.css'
 
 export const metadata = {
@@ -11,8 +12,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" data-theme="forest">
+      <body className='h-screen flex flex-col'>
+        <Navbar />
+        {children}
+        </body>
     </html>
   )
 }
