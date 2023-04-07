@@ -31,6 +31,7 @@ function Main({block}: {block: IContent}) {
             <div className="absolute z-[2] w-full h-full flex flex-col items-start justify-center gap-4 p-12 group-hover:scale-[99%] transition-all">
                 <h1 className="box-border  text-white text-5xl font-bold">{title}</h1>
                 <p className="box-border text-neutral-300 text-justify line-clamp-6">{content}</p>
+                <p className="w-full text-end">2022</p>
             </div>
             <div className="absolute z-[1] h-full w-full bg-black bg-opacity-50 group-hover:bg-opacity-70 transition-all group-hover:backdrop-blur-sm"></div>
             <div style={{backgroundImage: `url(${imgUrl})`}}  className="absolute h-full w-full transition-all duration-300"></div>
@@ -42,13 +43,13 @@ function Post({block}: {block: IContent}){
     const {content, imgUrl, title} = block
     //bg-[url(https://miro.medium.com/v2/resize:fit:828/format:webp/1*zM2ukv9W1fqHFNOtVFYudw.jpeg)]
     return (
-        <Link href="#2" className="group min-h-full relative group">
+        <Link href="/artigos/2" className="group min-h-full relative group">
             <div className="absolute z-[2] h-1/3 w-full justify-between p-4 group-hover:scale-[99%] transition">
                 <h1 className="box-border text-neutral-100 text-2xl font-bold mb-4">{title}</h1>
                 <p className="box-border text-neutral-300 line-clamp-3">{content}</p>
             </div>
             <div className="absolute z-[1] h-full w-full bg-black bg-opacity-50 group-hover:bg-opacity-70 transition-all group-hover:backdrop-blur-sm"></div>
-            <div style={{backgroundImage: `url(${imgUrl})`}} className={`w-full h-1/3  relative  bg-cover`}>
+            <div style={{backgroundImage: `url(${imgUrl})`}} className={`w-full h-1/3  relative bg-cover`}>
             </div>
         </Link>
     )

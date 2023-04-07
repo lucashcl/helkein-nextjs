@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 function Artigos() {
     return ( 
-        <p>artigos</p>
+        <Link href="artigos/1">Post 1</Link>
      );
 }
 
