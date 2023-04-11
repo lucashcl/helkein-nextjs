@@ -1,4 +1,0 @@
-# todos
-
-[]. carousel funcional
-[]. posts
