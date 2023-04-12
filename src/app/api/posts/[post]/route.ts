@@ -55,6 +55,7 @@ export async function GET(_: unknown, contex: any){
     }
     if(post < data.length) {
         return NextResponse.json(data[post])
+    } else {
+        return NextResponse.json([])
     }
-    
 }

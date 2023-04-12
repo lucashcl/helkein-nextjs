@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="business">
-      <body className='h-screen flex flex-col'>
+      <body className='flex flex-col relative'>
         <Navbar />
         {children}
         </body>
